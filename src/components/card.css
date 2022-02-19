@@ -1,0 +1,10 @@
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 200px;
+    height: 100px;
+    background-color: #F6EEAB;
+}
