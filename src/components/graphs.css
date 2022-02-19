@@ -4,6 +4,7 @@
     height: 300px;
     background-color: #5EBD96;
     display:flex;
+    justify-content: space-evenly;
     padding:20px;
 }
 
