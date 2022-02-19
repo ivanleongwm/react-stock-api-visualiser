@@ -1,11 +1,13 @@
 import './cards.css';
+import Card from './card'
 
-export default function Cards () {
+export default function Cards (props) {
+    //console.log('cards',props.stock)
     return (
         <div className="cards-container">
-            <div className="card">Card1</div>
-            <div className="card">Card2</div>
-            <div className="card">Card3</div>
+            <Card stock={props.stock}/>
+            <Card stock={props.stock}/>
+            <Card stock={props.stock}/>
         </div>
     )
 }
