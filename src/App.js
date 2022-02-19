@@ -1,13 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Card from './components/card'
+import Cards from './components/cards'
+import Graphs from './components/graphs'
+import Header from './components/header'
 
 function App() {
   return (
     <div className="App">
       <div className="content-container">
-        <div>Hello</div>
-        <Card/>
+        <Header />
+        <Graphs />
+        <Cards/>
       </div>
     </div>
   );

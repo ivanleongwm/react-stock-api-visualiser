@@ -1,0 +1,23 @@
+.graphs-container {
+    margin: 0 auto;
+    width: 85%;
+    height: 300px;
+    background-color: #5EBD96;
+    display:flex;
+    padding:20px;
+}
+
+.line-graph {
+    width: 450px;
+    height:300px;
+    background-color: #7EC796;
+    position: relative;
+}
+
+.bar-graph {
+    width: 350px;
+    height: 300px;
+    background-color: #7EC796;
+    position: relative;
+    margin-left:20px;
+}
