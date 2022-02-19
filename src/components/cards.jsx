@@ -8,6 +8,7 @@ export default function Cards (props) {
             <Card stock={props.stock}/>
             <Card stock={props.stock}/>
             <Card stock={props.stock}/>
+            
         </div>
     )
 }
