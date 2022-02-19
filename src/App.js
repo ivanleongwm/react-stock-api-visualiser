@@ -25,7 +25,6 @@ function App() {
     <div className="App">
       <div className="content-container">
         <div>{stock.price}</div>
-        <div>test2</div>
         <Header />
         <Graphs />
         <Cards stock={stock}/>
