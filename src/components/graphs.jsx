@@ -1,10 +1,12 @@
 import './graphs.css'
+import LineChart from '../charts/LineChart'
+import BarChart from '../charts/BarChart'
 
 export default function Graphs () {
     return (
         <div className="graphs-container">
-            <div className="line-graph">Line Graph</div>
-            <div className="bar-graph">Bar Graph</div>
+            <LineChart />
+            <BarChart />
         </div>
     )
 }
