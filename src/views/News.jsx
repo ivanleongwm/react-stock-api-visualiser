@@ -7,7 +7,13 @@ export default function News({cart}) {
     const [news,setNews] = useState([])
 
     useEffect(()=> {
-        axios.get('https://financialmodelingprep.com/api/v3/stock_news?tickers=AAPL,FB,GOOG,AMZN&page=0&apikey=ed422f5ab8a52bef7a04a8d39de5129d')
+        let stocks = []
+        for (let stock of cart) {
+            stocks.push(stock.symbol)
+        }
+        let tickers = stocks.join(",");
+        console.log(tickers)
+        axios.get(`https://financialmodelingprep.com/api/v3/stock_news?tickers=${tickers}&page=0&apikey=ed422f5ab8a52bef7a04a8d39de5129d`)
         .then(res => {
           console.log("response",res.data
           )
