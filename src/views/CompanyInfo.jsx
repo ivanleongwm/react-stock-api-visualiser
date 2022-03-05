@@ -5,8 +5,9 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default function CompanyInfo({cart}) {
-    const [ratios,setRatios] = useState([])
-
+    const [ratios,setRatios] = useState([{}])
+    let dataArray = []
+    console.log("cart",cart)
     const ratioz = [
         {
           "dividendYielTTM": 0.005393148250291108,
@@ -75,23 +76,35 @@ export default function CompanyInfo({cart}) {
         .then(res => {
           console.log("response",res.data
           )
-          const ratiosData = res.data;
-          //console.log(stockObject[0])
-          setRatios(ratiosData)
-          console.log("ListOfStocks",ratios)
+            const ratiosData = res.data;
+
+            let key = ticker;
+            let obj = {}
+            obj[key] = res.data;
+
+            console.log("OBJECT",obj)
+
+            setRatios([...ratios,obj]);
+            console.log("LISTOFSTOCKS",ratios)
+            dataArray.push(obj)
         })
     }
 
+    let stocks = []
+
     useEffect(()=> {
-        let stocks = []
+        stocks = []
+
         for (let stock of cart) {
+            console.log("Stock95",stock.symbol)
             getData(stock.symbol);
-            stocks.push(stock.symbol)
+            
         }
         
-        let tickers = stocks.join(",");
-        console.log(tickers)
-
+        //let tickers = stocks.join(",");
+        //console.log(tickers)
+        //console.log("ratios",stocks)
+        //console.log("data array",dataArray)
         
       },[cart])
 
