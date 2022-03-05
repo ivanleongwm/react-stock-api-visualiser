@@ -1,6 +1,7 @@
 import './newsCard.css';
 
 export default function NewsCard (props) {
+    
     //console.log(props.stock)
     return (
         <div className="card">
