@@ -3,46 +3,60 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Resp
 
 const data = [
   {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    "date": "2022-03-04 16:00:00",
+    "open": 163.17000000,
+    "low": 163.17000000,
+    "high": 164.07000000,
+    "close": 163.48000000,
+    "volume": 296914
   },
   {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    "date": "2022-03-04 15:59:00",
+    "open": 163.37110000,
+    "low": 163.14000000,
+    "high": 163.53000000,
+    "close": 163.22000000,
+    "volume": 954418
   },
   {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    "date": "2022-03-04 15:58:00",
+    "open": 163.26010000,
+    "low": 163.20000000,
+    "high": 163.39000000,
+    "close": 163.37000000,
+    "volume": 364991
   },
   {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    "date": "2022-03-04 15:57:00",
+    "open": 163.15000000,
+    "low": 163.07500000,
+    "high": 163.30000000,
+    "close": 163.26000000,
+    "volume": 299498
   },
   {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
+    "date": "2022-03-04 15:56:00",
+    "open": 163.14000000,
+    "low": 163.04000000,
+    "high": 163.19000000,
+    "close": 163.16000000,
+    "volume": 275582
   },
   {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
+    "date": "2022-03-04 15:55:00",
+    "open": 163.10000000,
+    "low": 163.08000000,
+    "high": 163.48000000,
+    "close": 163.13090000,
+    "volume": 581019
   },
   {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    "date": "2022-03-04 15:54:00",
+    "open": 162.87000000,
+    "low": 162.86000000,
+    "high": 163.21000000,
+    "close": 163.12000000,
+    "volume": 536959
   },
 ];
 
@@ -64,12 +78,12 @@ export default class Example extends PureComponent {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <XAxis dataKey="date" />
+          <YAxis domain={['dataMin','dataMax']}/>
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" fill="#8884d8" />
-          <Bar dataKey="uv" fill="#82ca9d" />
+          <Bar dataKey="low" fill="#8884d8" />
+          <Bar dataKey="high" fill="#82ca9d" />
         </BarChart>
       </ResponsiveContainer>
     );

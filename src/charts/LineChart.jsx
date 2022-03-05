@@ -32,6 +32,8 @@ const data = [
   },
 ];
 
+data.reverse()
+
 export default class Example extends PureComponent {
   static demoUrl = 'https://codesandbox.io/s/simple-line-chart-kec3v';
 
@@ -51,7 +53,7 @@ export default class Example extends PureComponent {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
-          <YAxis type='number' domain={[,]}/>
+          <YAxis type='number' domain={['dataMin','dataMax']}/>
           <Tooltip />
           <Legend />
           <Line type="monotone" dataKey="close" stroke="#8884d8" activeDot={{ r: 8 }} />
