@@ -3,6 +3,7 @@ import './App.css';
 import MainPage from './views/MainPage'
 import HomePage from './views/Homepage'
 import News from './views/News'
+import CompanyInfo from './views/CompanyInfo'
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
@@ -32,6 +33,7 @@ function App() {
         <Route path="/react-stock-api-visualiser/home" element={<HomePage 
         stock={stock} setStock={setStock} cart={cart} setCart={setCart}/>}/>
         <Route path="/react-stock-api-visualiser/news" element={<News cart={cart}/>}/>
+        <Route path="/react-stock-api-visualiser/companyinfo" element={<CompanyInfo cart={cart}/>}/>
       </Routes>
     </BrowserRouter>
   );
