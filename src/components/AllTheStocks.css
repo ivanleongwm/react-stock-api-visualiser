@@ -1,0 +1,23 @@
+.products {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container > div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  li {
+    list-style: none;
+    padding: 0.3em;
+    text-align: center;
+  }
+  
+  li:nth-child(odd) {
+    background: var(--grape-putty);
+    color: var(--modern-powder-blue);
+  }
+  
