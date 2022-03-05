@@ -8,6 +8,7 @@ import SearchForm from './SearchForm'
 
 function MainPage() {
     const [dailyPrices,setDailyPrices] = useState([])
+    const [minutePrices,setMinutePrices] = useState({})
     const [stock, setStock] = useState({
         symbol: 'empty'
       })
@@ -27,8 +28,8 @@ function MainPage() {
         <div className="content-container">
           <div>{stock.price}</div>
           <Header />
-          <SearchForm setDailyPrices={setDailyPrices}/>
-          <Graphs dailyPrices={dailyPrices}/>
+          <SearchForm setDailyPrices={setDailyPrices} setMinutePrices={setMinutePrices}/>
+          <Graphs dailyPrices={dailyPrices} minutePrices={minutePrices}/>
           
         </div>
       </div>

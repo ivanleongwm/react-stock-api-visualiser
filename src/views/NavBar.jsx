@@ -10,6 +10,9 @@ function Navbar() {
                 <li>
                     <Link to="/react-stock-api-visualiser/home">Home Page</Link>
                 </li>
+                <li>
+                <Link to="/react-stock-api-visualiser/news">News</Link>
+                </li>
             </ul>
         </nav>
     )

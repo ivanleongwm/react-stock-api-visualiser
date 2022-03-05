@@ -69,7 +69,7 @@ export default class Example extends PureComponent {
         <BarChart
           width={500}
           height={300}
-          data={data}
+          data={this.props.minutePrices}
           margin={{
             top: 5,
             right: 30,
