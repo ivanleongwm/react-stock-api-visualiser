@@ -35,6 +35,7 @@ const data = [
 data.reverse()
 
 export default class Example extends PureComponent {
+
   static demoUrl = 'https://codesandbox.io/s/simple-line-chart-kec3v';
 
   render() {
@@ -43,7 +44,7 @@ export default class Example extends PureComponent {
         <LineChart
           width={500}
           height={300}
-          data={data}
+          data={this.props.dailyPrices}
           margin={{
             top: 5,
             right: 30,

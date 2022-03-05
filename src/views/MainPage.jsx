@@ -7,7 +7,7 @@ import axios from 'axios';
 import SearchForm from './SearchForm'
 
 function MainPage() {
-  
+    const [dailyPrices,setDailyPrices] = useState([])
     const [stock, setStock] = useState({
         symbol: 'empty'
       })
@@ -27,12 +27,14 @@ function MainPage() {
         <div className="content-container">
           <div>{stock.price}</div>
           <Header />
-          <SearchForm />
-          <Graphs />
-          <Cards stock={stock}/>
+          <SearchForm setDailyPrices={setDailyPrices}/>
+          <Graphs dailyPrices={dailyPrices}/>
+          
         </div>
       </div>
     );
   }
 
 export default MainPage
+
+//<Cards stock={stock}/>
