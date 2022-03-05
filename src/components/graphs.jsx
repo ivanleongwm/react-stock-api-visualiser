@@ -4,9 +4,11 @@ import BarChart from '../charts/BarChart'
 
 export default function Graphs ({dailyPrices, minutePrices}) {
     return (
-        <div className="graphs-container">
-            <LineChart dailyPrices={dailyPrices} />
-            <BarChart minutePrices={minutePrices} />
+        <div className="outerContainer">
+            <div className="graphs-container">
+                <LineChart dailyPrices={dailyPrices} />
+                <BarChart minutePrices={minutePrices} />
+            </div>
         </div>
     )
 }

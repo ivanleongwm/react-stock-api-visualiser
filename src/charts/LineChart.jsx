@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
+/*
 const data = [
   {
     "date": "2022-03-04",
@@ -33,7 +33,7 @@ const data = [
 ];
 
 data.reverse()
-
+*/
 export default class Example extends PureComponent {
 
   static demoUrl = 'https://codesandbox.io/s/simple-line-chart-kec3v';
@@ -44,7 +44,7 @@ export default class Example extends PureComponent {
         <LineChart
           width={500}
           height={300}
-          data={this.props.dailyPrices}
+          data={this.props.dailyPrices.reverse()}
           margin={{
             top: 5,
             right: 30,

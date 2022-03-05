@@ -26,7 +26,6 @@ function MainPage() {
     return (
       <div className="App">
         <div className="content-container">
-          <div>{stock.price}</div>
           <Header />
           <SearchForm setDailyPrices={setDailyPrices} setMinutePrices={setMinutePrices}/>
           <Graphs dailyPrices={dailyPrices} minutePrices={minutePrices}/>
