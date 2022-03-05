@@ -1,0 +1,10 @@
+li {
+    list-style: none;
+    padding: 0.3em;
+    text-align: center;
+}
+
+li:nth-child(odd) {
+    background: var(--grape-putty);
+    color: var(--modern-powder-blue);
+}
