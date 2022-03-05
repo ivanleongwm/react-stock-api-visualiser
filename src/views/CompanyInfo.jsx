@@ -71,42 +71,31 @@ export default function CompanyInfo({cart}) {
         }
       ]
 
-    const getData = (ticker) => {
-        axios.get(`https://financialmodelingprep.com/api/v3/ratios-ttm/${ticker}?apikey=ed422f5ab8a52bef7a04a8d39de5129d`)
-        .then(res => {
-          console.log("response",res.data
-          )
-            const ratiosData = res.data;
+      useEffect( ()=> {
 
-            let key = ticker;
-            let obj = {}
-            obj[key] = res.data;
-
-            console.log("OBJECT",obj)
-
-            setRatios([...ratios,obj]);
-            console.log("LISTOFSTOCKS",ratios)
-            dataArray.push(obj)
-        })
-    }
-
-    let stocks = []
-
-    useEffect(()=> {
-        stocks = []
-
-        for (let stock of cart) {
-            console.log("Stock95",stock.symbol)
-            getData(stock.symbol);
-            
+        const companyStockCall = async () => {
+          
+          const stockPromises = cart.map(el=> {
+            return axios.get(`https://financialmodelingprep.com/api/v3/ratios-ttm/${el.symbol}?apikey=ed422f5ab8a52bef7a04a8d39de5129d`)
+          })
+          
+          const stockResponses = await Promise.allSettled(stockPromises)
+          console.log('stockresponses',stockResponses)
+  
+          const stockMap =  {}
+  
+          stockResponses.forEach((resp,index) => {
+            if(resp.status === 'fulfilled') {
+              stockMap[cart[index].symbol] = resp.value.data[0]
+            }
+          })
+  
+          setRatios(stockMap)
         }
-        
-        //let tickers = stocks.join(",");
-        //console.log(tickers)
-        //console.log("ratios",stocks)
-        //console.log("data array",dataArray)
-        
-      },[cart])
+  
+        companyStockCall()
+  
+        },[cart])
 
     return (
         <div className="App">
