@@ -4,6 +4,7 @@ import Graphs from '../components/graphs'
 import Header from '../components/header'
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import SearchForm from './SearchForm'
 
 function MainPage() {
   
@@ -26,6 +27,7 @@ function MainPage() {
         <div className="content-container">
           <div>{stock.price}</div>
           <Header />
+          <SearchForm />
           <Graphs />
           <Cards stock={stock}/>
         </div>
