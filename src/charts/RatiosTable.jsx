@@ -3,20 +3,36 @@ import styled from 'styled-components'
 import { useTable } from 'react-table'
 
 
-export default function RatiosTable() {
+export default function RatiosTable({ratioz}) {
     const data = React.useMemo(
       () => [
         {
-          col1: 'Hello',
-          col2: 'World',
+          col1: ratioz[0].grossProfitMarginTTM.toFixed(2),
+          col2: ratioz[0].operatingProfitMarginTTM.toFixed(2),
+          col3: ratioz[0].peRatioTTM.toFixed(2),
+          col4: ratioz[0].currentRatioTTM.toFixed(2),
+          col5: ratioz[0].returnOnEquityTTM.toFixed(2),
         },
         {
-          col1: 'react-table',
-          col2: 'rocks',
+            col1: 'Hello',
+            col2: 'World',
+            col3: 'hey',
+            col4: 'World',
+            col5: 'hey',
         },
         {
-          col1: 'whatever',
-          col2: 'you want',
+            col1: 'Hello',
+            col2: 'World',
+            col3: 'hey',
+            col4: 'World',
+            col5: 'hey',
+        },
+        {
+            col1: 'Hello',
+            col2: 'World',
+            col3: 'hey',
+            col4: 'World',
+            col5: 'hey',
         },
       ],
       []
@@ -25,12 +41,24 @@ export default function RatiosTable() {
     const columns = React.useMemo(
       () => [
         {
-          Header: 'Column 1',
+          Header: 'Gross Profit Margin',
           accessor: 'col1', // accessor is the "key" in the data
         },
         {
-          Header: 'Column 2',
+          Header: 'Operating Profit Margin',
           accessor: 'col2',
+        },
+        {
+            Header: 'PE Ratio',
+            accessor: 'col3',
+        },
+        {
+            Header: 'Current Ratio',
+            accessor: 'col4',
+        },
+        {
+            Header: 'Return on Equity',
+            accessor: 'col5',
         },
       ],
       []
