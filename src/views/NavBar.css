@@ -1,0 +1,8 @@
+.navbarContainer {
+    display: flex;
+    justify-content: center;
+}
+.linkContainer {
+    padding:0px;
+    margin:10px;
+}
