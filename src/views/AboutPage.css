@@ -1,5 +1,7 @@
 .aboutContent {
     font-weight: 300;
+    width: 700px;
+    margin: 0 auto;
     font-family: Roboto, 'Open Sans', Arial, sans-serif;
     padding: 20px;
 }
@@ -10,4 +12,8 @@ a {
 
 .title2 {
     padding:10px;
+}
+
+.title1 {
+    padding-top:20px;
 }
