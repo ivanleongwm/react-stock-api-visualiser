@@ -26,6 +26,7 @@ function HomePage({stock, setStock, cart, setCart}) {
       <div className="App">
         <div className="content-container">
           <Header />
+          <p><b>Please select stocks on the left to add to your portfolio.</b></p>
           <div className="stockscontainer">
             <AllTheThings products={stock} handleProductClick={handleProductClick}/>
             <MyStockCart cart={cart} handleCartClick={handleCartClick}/>

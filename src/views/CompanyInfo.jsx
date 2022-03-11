@@ -3,7 +3,7 @@ import NewsCard from '../components/newsCard'
 import RatiosTable from '../charts/RatiosTable';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import './CompanyInfo.css'
 export default function CompanyInfo({cart}) {
     const [ratios,setRatios] = useState([{
       "ATVI": {

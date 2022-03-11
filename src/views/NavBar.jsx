@@ -5,7 +5,10 @@ function Navbar() {
     return (
         <div className="navbarContainer">
             <div className="linkContainer">
-                <Link to="/react-stock-api-visualiser" style={{ textDecoration: 'none' }}>Ticker Search</Link>
+                <Link to="/react-stock-api-visualiser" style={{ textDecoration: 'none' }}>About</Link>
+            </div>
+            <div className="linkContainer">
+                <Link to="/react-stock-api-visualiser/search" style={{ textDecoration: 'none' }}>Ticker Search</Link>
             </div>
             <div className="linkContainer">
                 <Link to="/react-stock-api-visualiser/home" style={{ textDecoration: 'none' }}>Your Portfolio</Link>

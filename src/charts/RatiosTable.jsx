@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useTable } from 'react-table';
 import useEffect from 'react';
+import './RatiosTable.css'
 
 
 export default function RatiosTable({ratioz,ratios}) {
@@ -60,7 +61,7 @@ export default function RatiosTable({ratioz,ratios}) {
     } = useTable({ columns, data })
   
     return (
-      <>
+      <div className="tableContainer">
         <table {...getTableProps()} style={{ border: 'solid 1px blue' }}>
           <thead>
             {headerGroups.map(headerGroup => (
@@ -70,9 +71,10 @@ export default function RatiosTable({ratioz,ratios}) {
                     {...column.getHeaderProps()}
                     style={{
                       borderBottom: 'solid 3px red',
-                      background: 'aliceblue',
+                      background: 'white',
                       color: 'black',
                       fontWeight: 'bold',
+                      padding: '10px',
                     }}
                   >
                     {column.render('Header')}
@@ -93,7 +95,8 @@ export default function RatiosTable({ratioz,ratios}) {
                         style={{
                           padding: '10px',
                           border: 'solid 1px gray',
-                          background: 'papayawhip',
+                          background: 'white',
+                          font: 'Roboto',
                         }}
                       >
                         {cell.render('Cell')}
@@ -105,6 +108,6 @@ export default function RatiosTable({ratioz,ratios}) {
             })}
           </tbody>
         </table>
-      </>
+      </div>
     )
   }

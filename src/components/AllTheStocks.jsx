@@ -13,7 +13,7 @@ function AllTheThings(props) {
  
   return (
     <div className="AllTheThings">
-       <h2>Choose your Portfolio</h2>
+       <h2>Stock Tickers</h2>
        <ul>
            {productsList}
        </ul>

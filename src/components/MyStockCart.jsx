@@ -11,7 +11,7 @@ function MyStockCart(props) {
 
   return (
     <div className="MyStockCart">
-      <h2>Your Cart!</h2>
+      <h2>Your Portfolio</h2>
       <ul>
            {cartList}
       </ul>

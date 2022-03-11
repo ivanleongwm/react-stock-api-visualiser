@@ -7,8 +7,11 @@ export default function Graphs ({dailyPrices, minutePrices}) {
         <div className="outerContainer">
             <div className="graphs-container">
                 <LineChart dailyPrices={dailyPrices} />
-                <BarChart minutePrices={minutePrices} />
             </div>
+            <div className="graphs-container">
+             <BarChart minutePrices={minutePrices} />
+            </div>
+            
         </div>
     )
 }
