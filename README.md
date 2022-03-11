@@ -109,3 +109,7 @@ Michael and Seif-8 Instructors for guidance and advice on how to proceed.
 ---
 
  ## References
+
+Recharts: https://recharts.org/en-US/api
+React-tables: https://react-table.tanstack.com/
+Financial Modeling Prep: https://site.financialmodelingprep.com/developer/docs
