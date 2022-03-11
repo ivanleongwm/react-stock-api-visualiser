@@ -1,9 +1,12 @@
 .App {
   margin: 0 auto;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
   text-align: center;
   width: 90%;
   height:100%;
-  background-color: #C9DD94;
+  background-color: white;
 }
 
 .content-container {

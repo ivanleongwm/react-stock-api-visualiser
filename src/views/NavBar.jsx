@@ -5,16 +5,16 @@ function Navbar() {
     return (
         <div className="navbarContainer">
             <div className="linkContainer">
-                <Link to="/react-stock-api-visualiser">Ticker Search</Link>
+                <Link to="/react-stock-api-visualiser" style={{ textDecoration: 'none' }}>Ticker Search</Link>
             </div>
             <div className="linkContainer">
-                <Link to="/react-stock-api-visualiser/home">Your Portfolio</Link>
+                <Link to="/react-stock-api-visualiser/home" style={{ textDecoration: 'none' }}>Your Portfolio</Link>
             </div>
             <div className="linkContainer">
-                <Link to="/react-stock-api-visualiser/news">News</Link>
+                <Link to="/react-stock-api-visualiser/news" style={{ textDecoration: 'none' }}>News</Link>
             </div>
             <div className="linkContainer">
-                <Link to="/react-stock-api-visualiser/companyInfo">Company Info</Link>
+                <Link to="/react-stock-api-visualiser/companyInfo" style={{ textDecoration: 'none' }}>Company Info</Link>
             </div>
         </div>
     )

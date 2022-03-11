@@ -1,7 +1,8 @@
 .header-container {
-    height:60px;
-    width:85%;
+    height:40px;
+    width:95%;
     margin: 0 auto;
-    background-color: #7EC796;
-    padding: 20px;
+    background-color: #ffffff;
+    border-bottom:1px solid black;
+    padding: 10px;
 }

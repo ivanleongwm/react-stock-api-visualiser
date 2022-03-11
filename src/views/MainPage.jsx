@@ -27,7 +27,9 @@ function MainPage() {
       <div className="App">
         <div className="content-container">
           <Header />
+          <br></br>
           <SearchForm setDailyPrices={setDailyPrices} setMinutePrices={setMinutePrices}/>
+          <p>Search a stock ticker to see the graph being plotted!</p>
           <Graphs dailyPrices={dailyPrices} minutePrices={minutePrices}/>
           
         </div>

@@ -2,16 +2,16 @@
     margin: 0 auto;
     text-align: center;
     width: 90%;
-    height:600px;
-    background-color: #C9DD94;
+    height:1200px;
+    background-color: #c5effc;
   }
   
   .content-container {
     margin:0 auto;
     text-align: center;
-    width: 70%;
-    height: 600px;
-    background-color: #9DCF94;
+    width: 100%;
+    height: 1200px;
+    background-color: #c5effc;
     position: relative;
   }
   

@@ -5,7 +5,15 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default function CompanyInfo({cart}) {
-    const [ratios,setRatios] = useState([{}])
+    const [ratios,setRatios] = useState([{
+      "ATVI": {
+        "grossProfitMarginTTM": 0.00,
+        "operatingProfitMarginTTM": 0.00,
+        "peRatioTTM": 0.00,
+        "currentRatioTTM": 0.00,
+        "returnOnEquityTTM": 0.00,
+      }
+    }])
     let dataArray = []
     console.log("cart",cart)
     const ratioz = [
@@ -102,7 +110,7 @@ export default function CompanyInfo({cart}) {
         <div className="content-container">
           
           <Header />
-          <RatiosTable ratioz={ratioz}/>
+          <RatiosTable ratioz={ratioz} ratios={ratios}/>
         </div>
       </div>
     );

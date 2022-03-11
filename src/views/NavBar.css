@@ -1,8 +1,24 @@
 .navbarContainer {
     display: flex;
     justify-content: center;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Roboto, 'Open Sans', Arial, sans-serif;
+    font: red;
 }
 .linkContainer {
     padding:0px;
     margin:10px;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+a:hover {
+text-decoration: none;
+color: red;
+cursor: pointer;
 }
