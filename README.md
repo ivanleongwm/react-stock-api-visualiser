@@ -1,17 +1,13 @@
-# Your Project Title
-
-A single page stock portfolio tracker built with React and Financial Modeling Prep's API, using react concepts of react components, passing/lifting states, api calls with axios, re-charts library for plotting data and react-tables hook for tabluar data.
+# React Stock Api App
 
 ## Description
 
-A description of your project. Explain what is the project about and what is the use for it.
+A single page stock portfolio tracker built with React and Financial Modeling Prep's API, using react concepts of react components, passing/lifting states, api calls with axios, re-charts library for plotting data and react-tables hook for tabluar data.
 
-### Technical Used
-What technologies you used that helped you build this project. 
+### Technologies Used
+
 
 ```
-Example:
-
 - React
 - Re-charts JS Library to Plot Data
 - React-tables hook
@@ -22,6 +18,7 @@ Example:
 ### Wireframes
 
 Used figma to create a wireframe 
+
 ![wireframe_image](./images/wireframe.jpg)
 
 Although my final product looks different from the initial wireframe, the wireframe allowed me to think things through.
@@ -31,15 +28,21 @@ Although my final product looks different from the initial wireframe, the wirefr
 A story of the project user, that explains the use of the project.
 
 ```
-Summary: Sam is a 24 year old who is just venturing into investing, he wants to gather a little information about a group of stocks that he is interested in.
+Summary: Sam is a 24 year old who is just venturing into investing, he wants to gather a little information about a group of stocks that he is interested in. He wants a place where he can get all the customised information he needs conveniently.
 
 User must be able to:
 
-- View Example
-- Blablabla
-- Search Example
-- Fine Example
-- etc..
+- Needs and Goals
+Sam needs to be able to select stocks into a portfolio and get data for these stocks.
+
+- Motivations
+Sam wants to learn more about stocks so that he can invest in the future but doesn't want the inertia of too much time and effort invested.
+
+- Pain Points
+Sam does not want to google for each stock individually, does not have money for a paid subscription for investment portals.
+
+- Activities
+Sam is busy with work and school and loves to learn new things.
 
 ```
 
@@ -102,7 +105,7 @@ https://financialmodelingprep.com/api/v3/ratios-ttm
 
 ## Acknowledgments
 
-Michael and Seif Instructors for guidance and advice on how to proceed.
+Michael and Seif-8 Instructors for guidance and advice on how to proceed.
 ---
 
  ## References
